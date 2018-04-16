@@ -25,6 +25,7 @@ import static org.mockito.Mockito.when;
 
 import java.util.Optional;
 
+import de.adesso.junitinsights.annotations.JUnitInsights;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -43,6 +44,7 @@ import io.github.bonigarcia.mockito.MockitoExtension;
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Unit tests (black-box): rating cats")
 @Tag("unit")
+@JUnitInsights
 class RateCatsTest {
 
     @InjectMocks

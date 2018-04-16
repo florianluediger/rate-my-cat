@@ -24,6 +24,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 
 import java.util.List;
 
+import de.adesso.junitinsights.annotations.JUnitInsights;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -42,6 +43,7 @@ import io.github.bonigarcia.SeleniumExtension;
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @DisplayName("E2E tests: user interface")
 @Tag("e2e")
+@JUnitInsights
 public class UserInferfaceTest {
 
     @LocalServerPort

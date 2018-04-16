@@ -20,6 +20,9 @@ repositories {
     maven {
         url 'https://repo.spring.io/libs-milestone'
     }
+    maven {
+        url  "https://dl.bintray.com/adesso/junit-insights"
+    }
 }
 
 ext {
@@ -57,4 +60,6 @@ dependencies {
     testCompile("org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}")
     testCompile("org.junit.jupiter:junit-jupiter-params:${junitJupiterVersion}")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}")
+
+    testCompile ('de.adesso:junit-insights:0.0.1')
 }

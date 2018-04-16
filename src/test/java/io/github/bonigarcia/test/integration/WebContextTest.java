@@ -21,6 +21,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import de.adesso.junitinsights.annotations.JUnitInsights;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -38,6 +39,7 @@ import org.springframework.test.web.servlet.MockMvc;
 @Tag("integration")
 @Tag("functional-requirement-1")
 @Tag("functional-requirement-2")
+@JUnitInsights
 class WebContextTest {
 
     @Autowired

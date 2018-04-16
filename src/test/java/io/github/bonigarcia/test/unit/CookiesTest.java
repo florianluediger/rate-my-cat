@@ -29,6 +29,7 @@ import java.util.List;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
+import de.adesso.junitinsights.annotations.JUnitInsights;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -45,6 +46,7 @@ import io.github.bonigarcia.mockito.MockitoExtension;
 @DisplayName("Unit tests (white-box): handling cookies")
 @Tag("unit")
 @Tag("functional-requirement-5")
+@JUnitInsights
 class CookiesTest {
 
     @InjectMocks
